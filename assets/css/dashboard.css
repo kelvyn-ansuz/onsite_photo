@@ -820,10 +820,10 @@ hr {
 .btn-custom {
   color: #fff;
   background: linear-gradient(45deg, rgba(102,182,208,1) 0%, rgba(240,160,70,1) 100%);
-  padding: 20px;
+  padding: 10px;
   border-radius: 15px;
   border: #000 5px solid;
-  font-size: 32px;
+  font-size: 18px;
   font-family: Mont;
 }
 
