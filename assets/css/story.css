@@ -1,0 +1,141 @@
+.fullscreen-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.fullscreen-loading .spinner-border {
+    width: 4rem;
+    height: 4rem;
+}
+
+html, body {
+    /*overflow: hidden;*/
+    font-size: 20px;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.nav-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-item:hover {
+    background-color: rgba(215, 214, 202, 0.7) !important;
+}
+
+.nav-item.active {
+    background-color: #f0efe3;
+}
+
+.content {
+    flex: 4;
+    background-color: #f0efe3;
+    height: 100%;
+}
+
+.content h2 {
+}
+
+.content h3 {
+}
+
+.tab-pane:not(.show) {
+    height: 0;
+}
+
+.tab-pane.show {
+    height: 100%;
+}
+
+.content-inner-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-top {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 30px;
+}
+
+.content-top-inner-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-top-left {
+    flex: 3;
+}
+
+.content-top-right {
+    flex: 2;
+}
+
+.content-bottom {
+    flex: 3 3 auto;
+    padding: 0 30px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.content-bottom-inner-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    min-height: 0;
+}
+
+.content-bottom-left {
+    flex: 3 1 70%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.content-bottom-left .video-js {
+    flex: 1;
+    height: 100%;
+}
+
+.content-bottom-right {
+    flex: 1 1 30%;
+}
+
+video[poster]{
+    object-fit: fill;
+}

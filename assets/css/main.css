@@ -1,0 +1,287 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: TradeGothicLTStd;
+  src: url(../fonts/TradeGothicLTStd.otf);
+}
+
+@font-face {
+  font-family: TradeGothicLTStd-Bd2;
+  src: url(../fonts/TradeGothicLTStd-Bd2.otf);
+}
+
+@font-face {
+  font-family: TrajanPro-Bold;
+  src: url(../fonts/TrajanPro-Bold.otf);
+}
+
+@font-face {
+  font-family: Verdana;
+  src: url(../fonts/Verdana.ttf);
+}
+
+body{
+  /* background: url(../images/treebglogo.png) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.toppad{
+  padding-top: 3vh;
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+
+  body{
+    /* background: url(../images/treebglogo.png) no-repeat bottom center fixed; */
+    background-size: 100% auto;
+  }
+
+  .toppad{
+    padding-top: 15vh;
+  }
+
+}
+
+
+
+html, body{
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: OpenSans;
+}
+
+.stage{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+.stageContainer{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.stageBody{
+  padding: 30px;
+}
+
+.tagPad{
+  padding-top: 15px;
+  padding-right: 75px;
+  padding-left: 75px;
+
+}
+
+.headerPad{
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.logoPad{
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  margin-top: -30px;
+}
+
+
+@media (min-width: 992px) {
+  .logoPad{
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 20px;
+    margin-top: -30px;
+  }
+}
+
+.questionDiv{
+  padding: 25px 10px;
+}
+
+.btnTag{
+  padding: 20px;
+  margin: 15px;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  font-size: 30px;
+  text-shadow: 0px 3px 5px #000000;
+  text-transform: uppercase;
+  font-family: OpenSansBold;
+  width: 500px;
+}
+
+.btnBig{
+  padding: 20px;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  font-size: 30px;
+  text-shadow: 0px 3px 5px #000000;
+  text-transform: uppercase;
+  font-family: OpenSansBold;
+}
+
+.blueGradient{
+  background-color: #1e2a5c;
+  color: white;
+}
+
+.yellowGradient{
+  background-color: #f8981d;
+  color: white;
+}
+
+.redGradient{
+  background-color: #cf212b;
+  color: white;
+}
+
+.btn.blueGradient:hover{
+  background-color: #273984;
+  color: white;
+}
+
+.btn.yellowGradient:hover{
+  background-color: #f8b81d;
+  color: white;
+}
+
+.btn.redGradient:hover{
+  background-color: #ff2330;
+  color: white;
+}
+
+#tag1{
+  box-shadow: 0px 10px 0px 0px rgba(22,32,72,0.75), 0px 10px 5px 5px rgba(134,138,129,0.75);
+}
+
+
+#tag2{
+  box-shadow: 0px 10px 0px 0px rgba(214,130,24,0.75), 0px 10px 5px 5px rgba(134,138,129,0.75);
+}
+
+#tag3{
+  box-shadow: 0px 10px 0px 0px rgba(142,17,24,0.75), 0px 10px 5px 5px rgba(134,138,129,0.75);
+}
+
+button:focus{
+  outline: none!important;
+  box-shadow:none;
+}
+
+.boldText{
+  font-family: OpenSansBold;
+}
+
+#homeDiv{
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.emailOverwite{
+  font-size: 34px;
+  border:0px;
+  border-bottom:2px solid #000;
+}
+
+
+.emailOverwite:focus{
+  box-shadow: inset 0 0px 0 #ddd;
+  border-bottom:2px solid #ddd;
+}
+
+.emoji{
+  font-size: 20px;
+}
+
+.btn-bottom-left {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+}
+
+.btn-bottom-right {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+#submitTag input {
+  background-color: rgba(96, 96, 96, 0.3);
+  border-radius: 30px;
+  height: unset;
+  font-size: 14p;
+}
+
+#submitTag textarea {
+  background-color: rgba(40, 47, 98, 0.8);
+  color: #FFFFFF;
+  border-radius: 10px;
+  height: unset;
+  font-size: 14px;
+}
+
+#submitTag textarea::placeholder {
+  color: #FFFFFF;
+}
+
+.form-text {
+  font-size: 12px;
+}
+.stageOnline {
+  width: 100%;
+}
+
+.confirmBox{
+  width: 80%;
+  max-width: 1000px;
+  font-size:14px;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonDiv{
+  max-width: 1000px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maRight{
+  margin-right: 20px;
+}
+
+@media (max-width: 575.98px) {
+
+  .buttonDiv{
+    width: 95%
+  }
+  .maRight{
+    margin-right: 10px;
+  }
+
+}

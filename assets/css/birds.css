@@ -1,0 +1,651 @@
+.birdUnfold {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  /* background-color: rgba(255,0,0,0.2); */
+  padding: 0px;
+  margin: 0px;
+  width: 1042px;
+  height: 1042px;
+  /* perspective: 1000px; */
+  z-index: 900;
+  transform-origin: 590 405;
+  opacity: 0;
+  /* overflow: hidden; */
+
+}
+
+.unfoldClickableArea {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* background-color: rgba(0,0,0,0.7); */
+  z-index: 999;
+  transform-origin: top left;
+
+}
+
+.headUnfold {
+  position: absolute;
+  width: 1042px;
+  height: 1042px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.headUnfold.pink {
+  background-image: url(../images/unfold/pink/head.png);
+}
+
+.headUnfold.brown {
+  background-image: url(../images/unfold/brown/head.png);
+}
+
+.headUnfold.blue {
+  background-image: url(../images/unfold/blue/head.png);
+}
+
+
+.mainUnfold {
+  position: absolute;
+  width: 1042px;
+  height: 1042px;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.mainUnfold.pink {
+  background-image: url(../images/unfold/pink/main.png);
+}
+
+.mainUnfold.brown {
+  background-image: url(../images/unfold/brown/main.png);
+}
+
+.mainUnfold.blue {
+  background-image: url(../images/unfold/blue/main.png);
+}
+
+.unfoldCloneContainer{
+  position: absolute;
+  top: 27px;
+  left: 674px;
+  z-index: 2;
+  opacity: 1;
+  /* background-color: pink; */
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.mainCloneUnfold {
+  position: absolute;
+  width: 357px;
+  height: 557px;
+  top: 0px;
+  left: 0px;
+  transform-origin: bottom left;
+  /* transform: rotateX(180deg); */
+  /* background-color: purple; */
+}
+
+.mainCloneUnfold.pink {
+  background-image: url(../images/unfold/pink/main_rotated.png);
+}
+
+.mainCloneUnfold.brown {
+  background-image: url(../images/unfold/brown/main_rotated.png);
+}
+
+.mainCloneUnfold.blue {
+  background-image: url(../images/unfold/blue/main_rotated.png);
+}
+
+.backUnfold {
+  position: absolute;
+  width: 1042px;
+  height: 1042px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.backUnfold.pink {
+  background-image: url(../images/unfold/pink/back.png);
+}
+
+.backUnfold.brown {
+  background-image: url(../images/unfold/brown/back.png);
+}
+
+.backUnfold.blue {
+  background-image: url(../images/unfold/blue/back.png);
+}
+
+.frontFeetUnfold {
+  position: absolute;
+  width: 1042px;
+  height: 1042px;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  transform-origin: 630px 465px;
+}
+
+.frontFeetUnfold.pink {
+  background-image: url(../images/unfold/pink/front_feet.png);
+}
+
+.frontFeetUnfold.brown {
+  background-image: url(../images/unfold/brown/front_feet.png);
+}
+
+.frontFeetUnfold.blue {
+  background-image: url(../images/unfold/blue/front_feet.png);
+}
+
+
+.backFeetUnfold {
+  position: absolute;
+  width: 1042px;
+  height: 1042px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.backFeetUnfold.pink {
+  background-image: url(../images/unfold/pink/back_feet.png);
+}
+
+.backFeetUnfold.brown {
+  background-image: url(../images/unfold/brown/back_feet.png);
+}
+
+.backFeetUnfold.blue {
+  background-image: url(../images/unfold/blue/back_feet.png);
+}
+
+.quarterBack {
+  position: absolute;
+  width: 1042px;
+  height: 1042px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  /* background-color: orchid; */
+  opacity: 0;
+}
+
+.quarterBack.pink {
+  background-image: url(../images/unfold/pink/quarter_back.png);
+}
+
+.quarterBack.brown {
+  background-image: url(../images/unfold/brown/quarter_back.png);
+}
+
+.quarterBack.blue {
+  background-image: url(../images/unfold/blue/quarter_back.png);
+}
+
+.quarterFoldContainer {
+  position: absolute;
+  top: 171px;
+  left: 532px;
+  z-index: 2;
+  opacity: 1;
+  /* background-color: pink; */
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.quarterUnfold {
+  position: absolute;
+  width: 374px;
+  height: 711px;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  /* background-color: orchid; */
+  transform-origin: top left;
+
+  /* transform: rotateY(180deg); */
+  opacity: 0;
+}
+
+.quarterUnfold.pink {
+  background-image: url(../images/unfold/pink/quarter.png);
+}
+
+.quarterUnfold.brown {
+  background-image: url(../images/unfold/brown/quarter.png);
+}
+
+.quarterUnfold.blue {
+  background-image: url(../images/unfold/blue/quarter.png);
+}
+
+
+
+.half {
+  position: absolute;
+  width: 1042px;
+  height: 1042px;
+  top: 1px;
+  left: 1px;
+  z-index: 3;
+  opacity: 0;
+}
+
+.half.pink {
+  background-image: url(../images/unfold/pink/half2.png);
+}
+
+.half.brown {
+  background-image: url(../images/unfold/brown/half2.png);
+}
+
+.half.blue {
+  background-image: url(../images/unfold/blue/half2.png);
+}
+
+
+.otherHalfContainer{
+  position: absolute;
+  top: 675px;
+  left: 27px;
+  z-index: 3;
+  opacity: 1;
+  /* background-color: pink; */
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+
+}
+
+.otherHalf {
+  position: absolute;
+  width: 559px;
+  height: 1115px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+  transform-origin: bottom left;
+
+  /* transform: rotateY(180deg); */
+}
+
+.otherHalf.pink {
+  background-image: url(../images/unfold/pink/half_rotated.png);
+}
+
+.otherHalf.brown {
+  background-image: url(../images/unfold/brown/half_rotated.png);
+}
+
+.otherHalf.blue {
+  background-image: url(../images/unfold/blue/half_rotated.png);
+}
+
+.unfoldBirdText {
+  font-family: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  position: absolute;
+  font-size: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  top: 127px;
+  right: 127px;
+  width: 788px;
+  height: 768px;
+  z-index: 9;
+  opacity: 0;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+}
+
+.preload {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  lefT: 0px;
+  z-index: 1;
+}
+
+.newOverlayContent{
+  font-family: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: rgb(255,255,255);
+  background: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  max-height: 95%;
+  overflow: hidden;
+}
+
+ .overlay {
+  font-family: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.5);
+}
+
+.overlayIntro {
+  font-family: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 8900;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 8px #151c55;
+}
+
+.overlayIntroContent{
+  font-family: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: rgb(255,255,255);
+  max-height: 95%;
+  overflow: hidden;
+}
+
+.overLayHeaderPadding{
+  width:40px;
+}
+
+.overLayHeader{
+  padding-top: 15px;
+  text-align: center;
+}
+
+.newOverlayContentBody{
+  padding: 25px;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+
+  .overlayIntro {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+
+  .overLayHeader{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .newOverlayContentBody{
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .overlayIntro {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .overLayHeader{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .newOverlayContentBody{
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .overLayHeader{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .newOverlayContentBody{
+    padding-top: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 16px;
+  }
+}
+
+
+.brownFlying {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  padding: 0px;
+  margin: 0px;
+  width: 500px;
+  height: 500px;
+  z-index: 99;
+  transform-origin: top right;
+  transform: scale(0.5) rotateZ(22deg);
+  perspective: 1000px;
+  opacity: 0;
+}
+
+
+.brownBody{
+  position: absolute;
+  top: 303px;
+  left: 122px;
+  background-image: url(../images/flying/brown_body.png);
+  width: 373px;
+  height: 132px;
+  z-index: 2;
+}
+
+@keyframes brownFlip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(-180deg);
+    background-image: url(../images/flying/brown_front_down.png);
+  }
+  100% {
+    transform: rotateX(0deg);
+
+  }
+}
+
+@keyframes brownFlip2 {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+    background-image: url(../images/flying/brown_back_down.png);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+
+.brownWing{
+  position: absolute;
+  top: 64px;
+  left: 205px;
+  background-image: url(../images/flying/brown_front.png);
+  width: 137px;
+  height: 240px;
+  animation-name: brownFlip;
+  animation-delay: 300ms;
+  animation-duration: 1s;
+  transform-origin: bottom left;
+  animation-iteration-count: infinite;
+  z-index: 3;
+}
+
+
+.brownWingBack{
+  position: absolute;
+  top: 82px;
+  left: 205px;
+  width: 171px;
+  height: 223px;
+  background-image: url(../images/flying/brown_back.png);
+  animation-name: brownFlip2;
+  animation-delay: 300ms;
+  animation-duration: 1s;
+  transform-origin: bottom left;
+  animation-iteration-count: infinite;
+  z-index: 2;
+}
+
+.blueFlying {
+  top: 200px;
+  left: 200px;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  width: 500px;
+  height: 500px;
+  z-index: 99;
+  transform: scale(0.5) rotateZ(-22deg);
+  transform-origin: top left;
+  perspective: 1000px;
+  opacity: 0;
+}
+
+
+.blueBody{
+  position: absolute;
+  top: 303px;
+  right: 122px;
+  background-image: url(../images/flying/blue_body.png);
+  width: 373px;
+  height: 132px;
+  z-index: 2;
+}
+
+@keyframes blueFlip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(-180deg);
+    background-image: url(../images/flying/blue_front_down.png);
+  }
+  100% {
+    transform: rotateX(0deg);
+
+  }
+}
+
+@keyframes blueFlip2 {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+    background-image: url(../images/flying/blue_back_down.png);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.blueWing{
+  position: absolute;
+  top: 64px;
+  right: 205px;
+  background-image: url(../images/flying/blue_front.png);
+  width: 137px;
+  height: 240px;
+  animation-name: blueFlip;
+  animation-duration: 1s;
+  transform-origin: bottom right;
+  animation-iteration-count: infinite;
+  z-index: 3;
+}
+
+.blueWingBack{
+  position: absolute;
+  top: 82px;
+  right: 205px;
+  width: 171px;
+  height: 223px;
+  background-image: url(../images/flying/blue_back.png);
+  animation-name: blueFlip2;
+  animation-duration: 1s;
+  transform-origin: bottom left;
+  animation-iteration-count: infinite;
+  z-index: 2;
+}
+
+.aBird {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  z-index: 998;
+  opacity: 0;
+  background-size: 100% 100%;
+  /* background-color: rgba(0,0,0,0.5); */
+}
+
+.aBird.pink {
+  background-image: url(../images/bird/full_pink.png);
+}
+
+.aBird.blue {
+  background-image: url(../images/bird/full_blue.png);
+}
+
+.aBird.brown {
+  background-image: url(../images/bird/full_brown.png);
+}
+
+.aBird.flip {
+  transform: rotateY(180deg);
+}
