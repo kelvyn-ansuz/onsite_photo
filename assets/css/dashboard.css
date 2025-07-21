@@ -147,6 +147,7 @@ body {
     font-style: normal;
     text-rendering: optimizeLegibility;
     -webkit-backface-visibility: hidden;
+    background-attachment: fixed;
     height: 100vh;
 }
 

@@ -35,12 +35,12 @@
 
       <div class="row" style="padding-top: 20px;">
 
-        <div class="col-md-12 <?php if($this->settings['menuFloor'] !== 'yes') { echo(" hide"); }?>">
-          <a href="<?=base_url('dashboard/floorplan')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Meet our Long Service Awardees!</a>
+        <div class="col-md-12">
+          <a href="<?=base_url('list')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Meet Our Long Service Awardees!</a>
         </div>
 
-        <div class="col-md-12 paddingtop20 <?php if($this->settings['menuFood'] !== 'yes') { echo(" hide"); }?>">
-          <a href="<?=base_url('pen')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Pen your well wishes to Elitez!</a>
+        <div class="col-md-12 paddingtop20">
+          <a href="<?=base_url('pen')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Pen Your Well Wishes to Elitez!</a>
         </div>
 
         <!--

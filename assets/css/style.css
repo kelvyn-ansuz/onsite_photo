@@ -148,9 +148,10 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #000;
+  color: #fff;
   text-align: left;
-  background-color: #FFF;
+  background: linear-gradient(45deg,rgba(11, 59, 88, 1) 0%, rgba(204, 82, 24, 1) 100%);
+  text-shadow: 2px 2px 4px black;
 }
 
 [tabindex="-1"]:focus {
@@ -10044,7 +10045,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #fff !important;
 }
 
 .text-black-50 {
@@ -12736,6 +12737,7 @@ html, body {
   text-align: center;
   display: inline-block;
   border: 1px solid #151c55;
+  text-shadow: none;
 }
 
 .penButtonReverse {
@@ -12750,10 +12752,11 @@ html, body {
   text-align: center;
   display: block;
   border: 1px solid #151c55;
+  text-shadow: none;
 }
 
 .alignPen {
-  text-align: right;
+  text-align: center;
 }
 
 .overwriteFooter{

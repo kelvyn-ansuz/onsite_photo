@@ -24,23 +24,31 @@
     <script src="<?php echo base_url("assets/js/bootstrap-maxlength.min.js"); ?>"></script>
     <script src="<?php echo base_url("assets/js/jquery-ui.js"); ?>"></script>
     <style>
-        .oswald{
-          text-shadow: 0px 0px 20px #000, 0px 0px 5px #000, 0px 0px 10px #000;
 
+        @font-face {
+          font-family: Mont;
+          src: url('./assets/fonts/Montserrat-BoldItalic.otf')  format('opentype');
+        }
+
+        .oswald{
+          font-family: Mont;
         }
     </style>
 </head>
-<body class="body-smu front path-frontpage page-node-type-page home" style="overflow-x:hidden ">
+<body style="overflow: clip;">
 
-<div class="main-container" style="height: 100vh;  background: rgb(221,239,244);
-background: linear-gradient(0deg, rgba(221,239,244,1) 0%, rgba(255,255,255,1) 50%, rgba(221,239,244,1) 100%);">
+<div style="padding-top: 0px; padding-bottom:0px; max-width:700px; margin: auto;">
+  <img src="<?=base_url('assets/images/header.png')?>" style="width: 100%;">
+</div>
+
+<div class="main-container" style="">
     <div class="stageOnline" id="stage1">
         <form class="container-fluid" novalidate="" method="POST" id="submitTag">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10 pr-md-5 pt-lg-3 pt-sm-2 pt-2">
-                    <div class="d-none d-lg-block mb-lg-3 oswaldmy-3 oswald" style="color:#fff; font-size: 36px;">Leave a message for Elitez 15th Anniversary 2025</div>
-                    <div class="d-lg-none my-3 oswald mb-2 px-3" style="color:#fff; font-size: 36px; text-align: center;">Leave a message for Elitez 15th Anniversary 2025</div>
+                    <div class="d-none d-lg-block mb-lg-3 oswald" style="color:#fff; font-size: 36px; text-align: center;">Pen Your Well Wishes to Elitez</div>
+                    <div class="d-lg-none my-3 oswald mb-2 px-3" style="color:#fff; font-size: 36px; text-align: center;">Pen Your Well Wishes to Elitez</div>
                 </div>
             </div>
 
@@ -100,9 +108,18 @@ background: linear-gradient(0deg, rgba(221,239,244,1) 0%, rgba(255,255,255,1) 50
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10 mb-2 alignPen">
-                    <a href="<?=base_url()?>" class="penButton" style="margin-right: 20px;">Reset</a> <a href="#" id="btn-submit" class="penButton">Submit</a>
+                    <a href="<?=base_url("pen")?>" class="penButton" style="margin-right: 20px;">Reset</a>
+                    <a href="#" id="btn-submit" class="penButton">Submit</a>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 m-2 alignPen">
+                    <a href="<?=base_url()?>" class="penButton" style="width: 230px;">Back to Main</a>
+                </div>
+            </div>
+
         </form>
     </div>
 
@@ -124,23 +141,37 @@ background: linear-gradient(0deg, rgba(221,239,244,1) 0%, rgba(255,255,255,1) 50
         </div>
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div class="buttonDiv d-flex justify-content-around justify-content-md-end">
+
+            <div class="col-md-10 mb-2 ">
+                <div class="buttonDiv d-flex justify-content-center">
                     <a href="javascript:;" id="btn-back" class="penButtonReverse maRight" >Cancel</a>
-                    <a href="<?=base_url()?>" class="penButtonReverse maRight">Back</a>
                     <a href="javascript:;" id="btn-confirm-submit" class="penButton">Submit</a>
                 </div>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 m-2 alignPen">
+                <a href="<?=base_url()?>" class="penButton" style="width: 230px;">Back to Main</a>
+            </div>
+        </div>
+
     </div>
 
-    <div class="stageOnline" id="stage3" style="display:none; padding-top: 20vh;">
+    <div class="stageOnline" id="stage3" style="display:none;">
         <div class="row">
             <div class="confirmBox" style="">
                 <div class="col-sm-12 my-auto" style="text-align: center;">
                     Thank you, we have received your message. It will appear on the wall soon.
                 </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 m-2 alignPen">
+                <a href="<?=base_url()?>" class="penButton" style="width: 230px;">Back to Main</a>
             </div>
         </div>
 

@@ -8,6 +8,12 @@ class Home extends CI_Controller
     $this->load->view('dashboard/list');
   }
 
+  public function list()
+  {
+    $this->load->view('dashboard/people');
+  }
+
+
 
     public function old()
     {
