@@ -48,7 +48,7 @@ $animation3Duration = 13;
         width: 400px;
         height: 400px;
         position: absolute;
-        transition: all 3s;
+        transition: all 2.5s;
         /* text-shadow: 0px 0px 20px #83d4ef, 0px 0px 5px #83d4ef, 0px 0px 10px #83d4ef; */
       }
 
@@ -231,8 +231,8 @@ $animation3Duration = 13;
       console.log("Move clouds");
       $('.cloud.move').each(function() {
 
-        intMove = randomIntFromInterval(-50,1470, 10);
-        intDelay = randomIntFromInterval(8000,9800, 10);
+        intMove = randomIntFromInterval(25,1485,5);
+        intDelay = randomIntFromInterval(6000,9000, 100);
 
         $( this ).animate({left: intMove + 'px'}, intDelay);
       });
@@ -338,7 +338,7 @@ $animation3Duration = 13;
           tag.removeClass("agrowCloud");
           console.log("shrink");
           tag.addClass("move");
-        }, 6000);
+        }, 8000);
 
         setTimeout(function() {
           isPlaying = false;
