@@ -13,11 +13,13 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<div style="margin: auto; text-align:center;">
+  <img src="<?=base_url('assets/images/' .$target . '.jpg')?>" style="width: 100%; max-width:700px;">
+</div>
 
-  <div style="padding-top: 0px; padding-bottom:0px; max-width:700px; margin: auto;">
-    <img src="<?=base_url('assets/images/' .$target . '.jpg')?>" style="width: 100%;">
+<div class="container-fluid" style="text-align: center;">
 
+  <div style="padding-top: 20px; padding-bottom:0px; max-width:700px; margin: auto;">
 
     <div class="col-md-12 paddingtop20">
       <a href="<?=base_url('list')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Back to Long Service Awardees</a>
