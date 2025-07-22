@@ -36,6 +36,10 @@
       <div class="row" style="padding-top: 20px;">
 
         <div class="col-md-12">
+          <a href="<?=base_url('agenda')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Event Agenda</a>
+        </div>
+
+        <div class="col-md-12 paddingtop20">
           <a href="<?=base_url('list')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Meet Our Long Service Awardees!</a>
         </div>
 

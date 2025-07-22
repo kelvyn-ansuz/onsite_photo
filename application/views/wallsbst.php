@@ -10,6 +10,7 @@ $animation3Duration = 13;
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="<?=base_url('assets/js/jquery-3.4.1.min.js')?>"></script>
     <script src="<?=base_url('assets/js/jquery.textfill.min.js')?>"></script>
+    <script src="<?php echo base_url("assets/js/jquery-ui.js"); ?>"></script>
     <style>
       html, body {
           margin: 0;
@@ -36,17 +37,35 @@ $animation3Duration = 13;
       .fixed {
         width: 1920px;
         height: 1080px;
+        opacity: 0.6;
         background-image: url('<?=base_url('assets/images/background.jpg')?>');
         background-size: cover;
         position: relative;
+        background-color:#fff;
       }
 
       .cloud {
         width: 400px;
         height: 400px;
         position: absolute;
+        transition: all 3s;
         /* text-shadow: 0px 0px 20px #83d4ef, 0px 0px 5px #83d4ef, 0px 0px 10px #83d4ef; */
       }
+
+      <?php
+        for($i=1;$i<=30;$i++) {
+
+          $intSize = rand(250, 550) / 1000;
+          $intAngle = rand(-5,5);
+      ?>
+
+      .cloud<?=$i?>{
+        transform: scale(<?=$intSize?>) rotate(<?=$intAngle?>deg) ;
+      }
+
+      <?php
+        }
+      ?>
 
       .cloudleft {
         background-image: url('<?=base_url('assets/images/cloud_l.png')?>');
@@ -109,6 +128,11 @@ $animation3Duration = 13;
         animation: linear;
         animation-name: grow;
         animation-duration: 10s;
+        z-index: 15;
+      }
+
+      .agrowCloud {
+        transform: scale(1);
         z-index: 15;
       }
 
@@ -238,22 +262,23 @@ $animation3Duration = 13;
               arrNewIDs.push(objItem.AtCollectionID);
 
               //320,480
-              var xheight = randomIntFromInterval(5,200,10);
-              var xwidth = randomIntFromInterval(25,1485,20);
+              var xheight = randomIntFromInterval(5,200,5);
+              var xwidth = randomIntFromInterval(25,1485,5);
 
               //25 1470
 
-
               var strHTML = "";
 
-              if(xwidth<=710){
-                strHTML = '<div id="cloud_' + objItem.AtCollectionID + '" class="cloud cloudleft move" style="top:' + xheight + 'px; left:' + xwidth + 'px; transform:scale(0.4);">';
+              var strSize = "cloud" + randomIntFromInterval(1,30,1);
+
+              if(xwidth<=710) {
+                strHTML = '<div id="cloud_' + objItem.AtCollectionID + '" class="' + strSize + ' cloud cloudleft move" style="top:' + xheight + 'px; left:' + xwidth + 'px;">';
               } else {
-                strHTML = '<div id="cloud_' + objItem.AtCollectionID + '" class="cloud cloudright move" style="top:' + xheight + 'px; left:' + xwidth + 'px; transform:scale(0.4);">';
+                strHTML = '<div id="cloud_' + objItem.AtCollectionID + '" class="' + strSize + ' cloud cloudright move" style="top:' + xheight + 'px; left:' + xwidth + 'px;">';
               }
 
               strHTML += '<div class="cloudtext">' + objItem.AtText + '</div>';
-              strHTML += '<div class="cloudauthor">' + objItem.AtFirstName + " " + objItem.AtLastName + '</div>';
+              strHTML += '<div class="cloudauthor">' + objItem.AtFirstName + '</div>';
               strHTML += '</div>';
               var newTag = $(strHTML);
 
@@ -304,13 +329,18 @@ $animation3Duration = 13;
 
         tag.stop();
         tag.removeClass("move");
-        tag.addClass("growCloud");
+        tag.addClass("agrowCloud");
 
         console.log("grow");
 
+
         setTimeout(function() {
+          tag.removeClass("agrowCloud");
+          console.log("shrink");
           tag.addClass("move");
-          tag.removeClass("growCloud");
+        }, 6000);
+
+        setTimeout(function() {
           isPlaying = false;
         }, 12000);
       }
@@ -328,7 +358,7 @@ $animation3Duration = 13;
       idleAnimation();
 
       setTimeout(function() {
-        //animateClouds();
+        animateClouds();
       }, 2000);
 
     });

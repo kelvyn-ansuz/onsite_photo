@@ -56,31 +56,11 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="form-group row">
-                        <label for="firstName" class="col-form-label" style="padding-bottom: 20px !important; padding-left: 15px; padding-right: 15px; width: 120px; font-size: 14px; font-weight: 600;">First Name</label>
+                        <label for="firstName" class="col-form-label" style="padding-left: 15px; padding-right: 15px; width: 120px; font-size: 14px; font-weight: 600;">Name</label>
                         <div class="col" style="padding-top: 2px;">
-                            <input style="padding-top: 5px; padding-bottom: 5px; font-size: 14px;" type="text" class="form-control" name="firstName" id="firstName" maxlength="20" required>
+                            <input style="font-size: 14px;" type="text" class="form-control" name="firstName" id="firstName" maxlength="20" required>
                             <div class="invalid-feedback">This field is required.</div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="form-group row">
-                        <label for="lastName" class="col-form-label" style="padding-bottom: 20px !important; padding-left: 15px; padding-right: 15px; width: 120px; font-size: 14px; font-weight: 600;">Last Name</label>
-                        <div class="col" style="padding-top: 2px;">
-                            <input style="font-size: 14px;" type="text" class="form-control" name="lastName" id="lastName" maxlength="20" required>
-                            <div class="invalid-feedback">This field is required.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10" style="height:2px;">
-                    <div class="form-group" style="border-top:2px solid #000000;">
                     </div>
                 </div>
             </div>
@@ -197,10 +177,6 @@
         threshold: 0
     });
 
-    $('#lastName').maxlength({
-        threshold: 0
-    });
-
     $(document).ready(function() {
     });
 
@@ -209,9 +185,8 @@
 
         strText = $("#inputMessage").val().trim();
         strFirstName = $("#firstName").val().trim();
-        strLastName = $("#lastName").val().trim();
 
-        if (strText.length > 100 || strFirstName.length > 20 || strLastName.length > 20){
+        if (strText.length > 100 || strFirstName.length > 20){
             $(".feedbackBox").addClass("text-danger");
             $(".feedbackBox").html("Sorry, but certain fields have exceed the word limit");
             $( ".feedbackBox" ).animate({
@@ -219,9 +194,9 @@
             }).animate({
                 backgroundColor: "rgba(255, 255, 255, 0)"
             });
-        } else if (strText && strFirstName && strLastName) {
+        } else if (strText && strFirstName) {
 
-            $.post("ajax/checkText/", { strText: strText, strFirstName: strFirstName, strLastName: strLastName} , function(data){
+            $.post("ajax/checkText/", { strText: strText, strFirstName: strFirstName} , function(data){
                 if (data.status == false) {
                     $(".feedbackBox").addClass("text-danger");
                     $(".feedbackBox").html("It looks like you are unable to submit your message. Please check and remove inappropriate language that may have been accidentally included before submitting your message. Thank you.");
@@ -239,7 +214,7 @@
                     });
                 } else {
                     stage2.find('.tag-text').html(form.find('[name=inputMessage]').val());
-                    stage2.find('.tag-author').html(form.find('[name=firstName]').val() + ' ' + form.find('[name=lastName]').val());
+                    stage2.find('.tag-author').html(form.find('[name=firstName]').val());
 
                     stage1.fadeOut(500, function() {
                         stage2.fadeIn(500);
@@ -288,9 +263,8 @@
         } else {
             strText = $("#inputMessage").val();
             strFirstName = $("#firstName").val();
-            strLastName = $("#lastName").val();
 
-            $.post("ajax/saveText/", { strText: strText, strFirstName: strFirstName, strLastName: strLastName} , function(data){
+            $.post("ajax/saveText/", { strText: strText, strFirstName: strFirstName} , function(data){
                 if (data.status == false) {
                     $(".feedbackBox").addClass("text-danger");
                     $(".feedbackBox").html("It looks like you are unable to submit your message. Please check and remove inappropriate language that may have been accidentally included before submitting your message. Thank you.");
