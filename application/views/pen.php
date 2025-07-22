@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
-    <title>PTWA 2024</title>
+    <title>Elitez 2025</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/all.min.css"); ?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/main.css"); ?>">

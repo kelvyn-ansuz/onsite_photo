@@ -6,7 +6,7 @@ $animation3Duration = 13;
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 //EN">
 <html>
 <head>
-    <title>Wall</title>
+    <title>Elitez 2025</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="<?=base_url('assets/js/jquery-3.4.1.min.js')?>"></script>
     <script src="<?=base_url('assets/js/jquery.textfill.min.js')?>"></script>
