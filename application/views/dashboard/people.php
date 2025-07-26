@@ -81,10 +81,6 @@
           <a href="<?=base_url('service/details/10')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Tsai Pei Hua (Penny)</a>
         </div>
 
-        <div class="col-md-12" style="padding-top: 80px;">
-          <a href="<?=base_url('')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Back to Main</a>
-        </div>
-
         <div style="padding-top: 50px; color:#fff; font-size: 32px; text-align: center; font-family: Mont; width: 100%;   text-shadow: 2px 2px 4px black;">Dedicated Service Award</div>
 
         <div class="col-md-12 paddingtop20">
@@ -99,6 +95,9 @@
           <a href="<?=base_url('service/details/13')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Liew Yuk Kong</a>
         </div>
 
+        <div class="col-md-12" style="padding-top: 80px;">
+          <a href="<?=base_url('')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Back to Main</a>
+        </div>
 
         <!--
         <div class="col-md-12 <?php if($this->settings['gameMenu'] !== 'yes') { echo(" hide"); }?>">
