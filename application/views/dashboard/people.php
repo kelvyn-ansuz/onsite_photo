@@ -40,10 +40,6 @@
         <div style="padding-top: 50px; color:#fff; font-size: 32px; text-align: center; font-family: Mont; width: 100%;   text-shadow: 2px 2px 4px black;">10 Years</div>
 
         <div class="col-md-12 paddingtop20">
-          <a href="<?=base_url('service/details/1')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Tok Mei Ting</a>
-        </div>
-
-        <div class="col-md-12 paddingtop20">
           <a href="<?=base_url('service/details/2')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Li Qian</a>
         </div>
 
@@ -51,14 +47,14 @@
           <a href="<?=base_url('service/details/3')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Tan Hui Qing</a>
         </div>
 
+        <div class="col-md-12 paddingtop20">
+          <a href="<?=base_url('service/details/1')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Tok Mei Ting</a>
+        </div>
+
         <div style="padding-top: 50px; color:#fff; font-size: 32px; text-align: center; font-family: Mont; width: 100%;   text-shadow: 2px 2px 4px black;">5 Years</div>
 
         <div class="col-md-12 paddingtop20">
-          <a href="<?=base_url('service/details/4')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Kenneth Koh</a>
-        </div>
-
-        <div class="col-md-12 paddingtop20">
-          <a href="<?=base_url('service/details/5')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Chua Yu Jinn (Eugene)</a>
+          <a href="<?=base_url('service/details/8')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Chan Wai Seng Nicholas</a>
         </div>
 
         <div class="col-md-12 paddingtop20">
@@ -66,15 +62,19 @@
         </div>
 
         <div class="col-md-12 paddingtop20">
+          <a href="<?=base_url('service/details/5')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Chua Yu Jinn (Eugene)</a>
+        </div>
+
+        <div class="col-md-12 paddingtop20">
           <a href="<?=base_url('service/details/7')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Heng Zeng Yang Ian</a>
         </div>
 
         <div class="col-md-12 paddingtop20">
-          <a href="<?=base_url('service/details/8')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Chan Wai Seng Nicholas</a>
+          <a href="<?=base_url('service/details/9')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">How Hee Chek (Jaysen)</a>
         </div>
 
         <div class="col-md-12 paddingtop20">
-          <a href="<?=base_url('service/details/9')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">How Hee Chek (Jaysen)</a>
+          <a href="<?=base_url('service/details/4')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Kenneth Koh</a>
         </div>
 
         <div class="col-md-12 paddingtop20">
@@ -84,6 +84,21 @@
         <div class="col-md-12" style="padding-top: 80px;">
           <a href="<?=base_url('')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Back to Main</a>
         </div>
+
+        <div style="padding-top: 50px; color:#fff; font-size: 32px; text-align: center; font-family: Mont; width: 100%;   text-shadow: 2px 2px 4px black;">Dedicated Service Award</div>
+
+        <div class="col-md-12 paddingtop20">
+          <a href="<?=base_url('service/details/11')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Ellen Cheong</a>
+        </div>
+
+        <div class="col-md-12 paddingtop20">
+          <a href="<?=base_url('service/details/12')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Kevin Chong</a>
+        </div>
+
+        <div class="col-md-12 paddingtop20">
+          <a href="<?=base_url('service/details/13')?>" class="btn btn-custom btn-block btn-lg" id="talenttime">Liew Yuk Kong</a>
+        </div>
+
 
         <!--
         <div class="col-md-12 <?php if($this->settings['gameMenu'] !== 'yes') { echo(" hide"); }?>">
